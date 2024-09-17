@@ -9,21 +9,21 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #032436;
             color: #333;
         }
 
         header {
-            background-color: #0288d1;
+            background-color: #032436;
             color: #fff;
-            padding: 20px;
+            padding: 15px;
             text-align: center;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            background-color: #0277bd;
+            background-color: #113e58; 
         }
 
         nav a {
@@ -32,57 +32,101 @@
             text-decoration: none;
             text-transform: uppercase;
             font-weight: bold;
+            transition: background-color 0.3s ease;
         }
 
         nav a:hover {
             background-color: #01579b;
         }
 
+        .content-wrapper {
+            background-image: url('model/seg.jpg');
+            background-size: cover;
+            background-position: center;
+            padding-top: 20px;
+            min-height: 100vh;
+        }
+
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffffa8;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container h2 {
+            color: #032436;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            color: #113e58;
+            border-bottom: 2px solid #113e58;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            margin-bottom: 10px;
+        }
+
+        .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section ul li {
+            margin-bottom: 10px;
+        }
+
+        .section ul li a {
+            color: #0288d1;
+            text-decoration: none;
+        }
+
+        .section ul li a:hover {
+            text-decoration: underline;
         }
 
         footer {
-            background-color: #0277bd;
+            background-color: #032436;
             color: #fff;
             text-align: center;
             padding: 10px 0;
             position: relative;
             width: 100%;
+            margin-top: 20px;
         }
 
-        .breadcrumbs {
-            display: flex;
-            margin-bottom: 20px;
-            padding: 10px 0;
-        }
-
-        .breadcrumbs a {
+        footer a {
             color: #0288d1;
             text-decoration: none;
-            padding: 0 5px;
         }
 
-        .breadcrumbs span {
-            padding: 0 5px;
+        footer a:hover {
+            text-decoration: underline;
         }
 
         #go-top {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #0288d1;
+            background-color: #198ac7;
             color: white;
             padding: 10px;
             border: none;
             border-radius: 50%;
             cursor: pointer;
             display: none;
+            font-size: 18px;
         }
     </style>
 </head>
@@ -98,21 +142,42 @@
     <a href="./model/estandares.html">Estándares de Información</a>
 </nav>
 
-<div class="container">
-    <h2>Bienvenido a la Normateca Digital</h2>
-    <p>Accede a las normativas aplicables sobre el manejo de la información, leyes, estándares y avisos de privacidad. Selecciona una sección para más detalles.</p>
-</div>
-<div class="container">
-<section id="privacidad" class="card">
-    <h2>Aviso de Privacidad</h2>
-    <div class="privacy">
-        <p><strong>[Nombre de tu Empresa]</strong>, con domicilio en [Dirección], es responsable del tratamiento de sus datos personales. Recabamos sus datos con fines de contacto y mercadotecnia. Para más información, favor de consultar nuestro <a href="#">aviso de privacidad completo</a>.</p>
+<div class="content-wrapper">
+    <div class="container">
+        <h2>Bienvenido a la Normateca Digital</h2>
+        <p>Accede a las normativas aplicables sobre el manejo de la información, leyes, estándares y avisos de privacidad. Selecciona una sección para más detalles.</p>
+
+        <div class="section">
+            <h3>Últimas Noticias</h3>
+            <ul>
+                <li><a href="https://www.perfil.com/noticias/elobservador/identidad-descentralizada-para-proteger-nuestros-datos.phtml" target="_blank">Identidad Descentralizada para proteger nuestros datos</a></li>
+                <li><a href="https://oficinista.mx/tecnologia/guia-para-desarrolladores-sobre-la-normativa-de-aplicaciones-moviles-en-europa/174210/" target="_blank">Guía para desarrolladores sobre la normativa de aplicaciones móviles en Europa</a></li>
+                <li><a href="https://www.legaltoday.com/opinion/blogs/nuevas-tecnologias-blogs/blog-prodat/la-proteccion-de-datos-en-el-uso-de-herramientas-educativas-2024-09-12/" target="_blank">La protección de datos en el uso de herramientas educativas</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Servicios</h3>
+            <p>En Normateca Digital, ofrecemos una gama de servicios para asegurar que tu organización cumpla con todas las normativas vigentes:</p>
+            <ul>
+                <li>Consultoría en normativas y regulaciones</li>
+                <li>Capacitación y formación</li>
+                <li>Auditorías y revisión de políticas</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Contacto</h3>
+            <p>Para más información o consultas, no dudes en ponerte en contacto con nosotros:</p>
+            <p>Email: <a href="mailto:contacto@normatecadigital.com">info@normatecadigital.com</a></p>
+            <p>Teléfono: +52 418 456 789</p>
+        </div>
     </div>
-</section>
 </div>
 
 <footer>
     <p>&copy; 2024 Normateca Digital. Todos los derechos reservados.</p>
+    <p><a href="model/Aviso de privacidad integral.pdf">Aviso de Privacidad</a></p>
 </footer>
 
 <button id="go-top" onclick="scrollToTop()">⬆</button>
@@ -133,4 +198,3 @@
 </script>
 </body>
 </html>
-
