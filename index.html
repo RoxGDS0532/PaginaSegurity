@@ -2,20 +2,19 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seguridad Informática</title>
+    <title>Normateca Digital - Inicio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
             background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background-color: #007BFF;
+            background-color: #0288d1;
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -24,106 +23,114 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #0056b3;
+            background-color: #0277bd;
         }
 
         nav a {
             color: #fff;
-            padding: 15px 20px;
+            padding: 15px;
             text-decoration: none;
             text-transform: uppercase;
-            transition: background 0.3s;
+            font-weight: bold;
         }
 
         nav a:hover {
-            background-color: #004494;
+            background-color: #01579b;
         }
 
         .container {
-            padding: 20px;
             max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .hero {
-            background-image: url('https://source.unsplash.com/1600x900/?cybersecurity');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            text-shadow: 1px 1px 2px #000;
-            font-size: 2em;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        .card {
-            background-color: #fff;
+            margin: 20px auto;
             padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .card h2 {
-            margin-top: 0;
-            color: #007BFF;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         footer {
-            background-color: #0056b3;
+            background-color: #0277bd;
             color: #fff;
             text-align: center;
             padding: 10px 0;
             position: relative;
-            bottom: 0;
             width: 100%;
+        }
+
+        .breadcrumbs {
+            display: flex;
+            margin-bottom: 20px;
+            padding: 10px 0;
+        }
+
+        .breadcrumbs a {
+            color: #0288d1;
+            text-decoration: none;
+            padding: 0 5px;
+        }
+
+        .breadcrumbs span {
+            padding: 0 5px;
+        }
+
+        #go-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #0288d1;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Seguridad Informática</h1>
-    </header>
-    <nav>
-        <a href="#introduccion">Introducción</a>
-        <a href="#amenazas">Amenazas Comunes</a>
-        <a href="#prevencion">Prevención</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-    <div class="hero">
-        <h2>Protege tu Información en la Era Digital</h2>
+
+<header>
+    <h1>Normateca Digital</h1>
+</header>
+
+<nav>
+    <a href="./index.html">Inicio</a>
+    <a href="./model/eticos_legales.html">Aspectos Éticos y Legales</a>
+    <a href="./model/estandares.html">Estándares de Información</a>
+</nav>
+
+<div class="container">
+    <h2>Bienvenido a la Normateca Digital</h2>
+    <p>Accede a las normativas aplicables sobre el manejo de la información, leyes, estándares y avisos de privacidad. Selecciona una sección para más detalles.</p>
+</div>
+<div class="container">
+<section id="privacidad" class="card">
+    <h2>Aviso de Privacidad</h2>
+    <div class="privacy">
+        <p><strong>[Nombre de tu Empresa]</strong>, con domicilio en [Dirección], es responsable del tratamiento de sus datos personales. Recabamos sus datos con fines de contacto y mercadotecnia. Para más información, favor de consultar nuestro <a href="#">aviso de privacidad completo</a>.</p>
     </div>
-    <div class="container">
-        <section id="introduccion" class="card">
-            <h2>Introducción</h2>
-            <p>La seguridad informática es esencial para proteger la integridad y confidencialidad de la información en un mundo digital cada vez más conectado.</p>
-        </section>
-        <section id="amenazas" class="card">
-            <h2>Amenazas Comunes</h2>
-            <ul>
-                <li>Phishing: Fraude para obtener datos personales.</li>
-                <li>Malware: Programas maliciosos que dañan sistemas.</li>
-                <li>Ransomware: Secuestro de datos a cambio de un rescate.</li>
-                <li>Ataques DDoS: Saturación de servicios para hacerlos inaccesibles.</li>
-            </ul>
-        </section>
-        <section id="prevencion" class="card">
-            <h2>Prevención</h2>
-            <p>Para protegerte, utiliza contraseñas seguras, activa la autenticación de dos factores, mantén tu software actualizado y sé cauteloso con los correos electrónicos sospechosos.</p>
-        </section>
-        <section id="contacto" class="card">
-            <h2>Contacto</h2>
-            <p>Para más información, contáctanos en: <a href="mailto:info@seguridad.com">info@seguridad.com</a></p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2024 Seguridad Informática. Todos los derechos reservados.</p>
-    </footer>
+</section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Normateca Digital. Todos los derechos reservados.</p>
+</footer>
+
+<button id="go-top" onclick="scrollToTop()">⬆</button>
+
+<script>
+    window.onscroll = function() {
+        let button = document.getElementById("go-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
 </body>
 </html>
+
